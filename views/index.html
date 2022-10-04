@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+  <title>Chat App</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width">        
+  <link rel="stylesheet" href="/public/stylesheets/style.css">
+  <link rel="stylesheet" href="/public/stylesheets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/stylesheets/vendor/font-awesome.min.css">
+</head>
+<body class="main-body">
+  <!-- <div class="backdrop position-fixed"> </div> -->
+  <div class="container shadow-lg mt-5 px-0 h-auto">
+    
+    <div class="card d-block">
+      <div class="card-body py-1 h-100">
+      
+        <div class="row bg-light rounded">
+          <div class="col-4" >
+            <div class="row py-1 text-secondary">
+              <div class="col-4"><i class="fa fa-user fa-3x"></i> </div>
+              <div class="col-6 text-right pt-2"><i class="fa fa-envelope fa-2x"></i> </div>
+              <div class="col-2 text-right pt-2"><i class="fa fa-ellipsis-v fa-2x"></i></i> </div>
+            </div>
+            <div class="row bg-secondary">
+              <div class="col-12 pt-3">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa fa-search"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Search...">
+                </div>
+              </div>
+            </div>
+            
+            <div class="row border-bottom border-secondary py-2">
+              <div class="col-2 px-0 text-center">
+                <i class="fa fa-user fa-3x"></i>
+              </div>
+              <div class="col-10">
+                <span class="font-weight-bold">Username 1</span><br>
+                <span class="text-success">typing...</span>
+              </div>
+            </div>
+
+            <div class="row border-bottom border-secondary py-2">
+              <div class="col-2 px-0 text-center">
+                <i class="fa fa-user fa-3x"></i>
+              </div>
+              <div class="col-10">
+                <span class="font-weight-bold">Username 1</span><br>
+                <i class="fa fa-check text-secondary"></i>
+                <span class="text-secondary"> Hello</span>
+              </div>
+            </div>
+
+            <div class="row border-bottom border-secondary py-2">
+              <div class="col-2 px-0 text-center">
+                <i class="fa fa-user fa-3x"></i>
+              </div>
+              <div class="col-10">
+                <span class="font-weight-bold">Username 1</span><br>
+                <i class="fa fa-check text-primary"></i>
+                <span class="text-secondary"> Hi</span>
+              </div>
+            </div>
+            <div class="row border-bottom border-secondary py-2">
+              <div class="col-2 px-0 text-center">
+                <i class="fa fa-user fa-3x"></i>
+              </div>
+              <div class="col-10">
+                <span class="font-weight-bold">Username 1</span><br>
+                <span class="text-secondary"> yo bro</span>
+              </div>
+            </div>
+            <div class="row border-bottom border-secondary py-2">
+              <div class="col-2 px-0 text-center">
+                <i class="fa fa-user fa-3x"></i>
+              </div>
+              <div class="col-10">
+                <span class="font-weight-bold">Username 1</span><br>
+                <span class="text-secondary"> yo bro</span>
+              </div>
+            </div>
+          
+          </div>
+
+
+          
+
+          <div class="col-8 border-left border-dark">
+            <div class="row py-1">
+              <div class="col-1"><i class="fa fa-user fa-3x rounded-circle"></i> </div>
+              <div class="col-9 font-weight-bold">User 1 <br> <span class="text-secondary font-weight-normal">typing...</span> </div>
+              <div class="col-1 text-right pt-2"><i class="fa fa-paperclip fa-2x"></i> </div>
+              <div class="col-1 text-right pt-2"><i class="fa fa-ellipsis-v fa-2x"></i></i> </div>
+            </div>
+            
+            <div class="row chatScreen overflow-auto">
+              <div class="col-12 p-4 overflow-auto" id="chats"> <!--Messages-->
+                
+                <p class="text-right mb-2 text-break" >
+                  <span class="bg-success rounded p-1">
+                    hello <span class="text-muted" style="font-size: 0.75em;">13:40</span>
+                  </span>
+                </p>
+                <p class="text-right mb-2 text-break" >
+                  <span class="bg-success rounded p-1">
+                    hello <span class="text-muted" style="font-size: 0.75em;">13:40</span>
+                  </span>
+                </p>
+                <p class="text-left mb-2 text-break" >
+                  <span class="bg-light rounded p-1">
+                    hello <span class="text-muted" style="font-size: 0.75em;">13:40</span>
+                  </span>
+                </p>
+                <p class="text-left mb-2 text-break" >
+                  <span class="bg-light rounded p-1">
+                    hello <span class="text-muted" style="font-size: 0.75em;">13:40</span>
+                  </span>
+                </p>
+
+                <p class="text-center mb-2 text-break" ><span class="bg-info rounded p-1">Today</span></p>
+              </div>
+            </div>
+            
+            <div class="row pt-2">
+              <div class="col-1 text-center h2 px-0">
+                &#128512;
+              </div>
+              <div class="col-10 px-0">
+                <input type="text" class="form-control" id="inputField">
+              </div>
+              <div class="col-1 text-center  px-0">
+                <i class="fa fa-microphone fa-2x" id="sendBtn"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  
+  
+
+
+
+
+
+
+
+    <script src="/public/javascripts/vendor/jquery.min.js"></script>
+    <script src="/public/javascripts/vendor/bootstrap.min.js"></script>
+    <script src="/public/javascripts/vendor/templatemo_script.js"></script>
+    <script type="text/javascript">
+    // Line chart
+    let switchFaIcon = (identifier,icon1,icon2)=>{
+      if($(identifier).hasClass('fa-'+icon1)){
+        $(identifier).removeClass('fa-'+icon1);
+        $(identifier).addClass('fa-'+icon2);
+      }
+    }
+    let sentMsg = text=>{
+      const now = new Date();
+      const [a,b] = now.toTimeString().split(':');
+      const msg = `<p class="text-right mb-2 text-break" >
+                    <span class="bg-success rounded p-1">
+                      ${text} <span class="text-muted" style="font-size: 0.75em;">${[a,b].join(':')}</span>
+                    </span>
+                  </p>`;
+      $(msg).appendTo('#chats');
+      switchFaIcon('#sendBtn','send','microphone');
+      $("html, body, #chats").animate({ scrollTop: $("#chats").height() }, 1000);
+    }
+    let receivedMsg = text=>{
+      const now = new Date();
+      const [a,b] = now.toTimeString().split(':');
+      const msg = `<p class="text-left mb-2 text-break" >
+                    <span class="bg-light rounded p-1">
+                      ${text} <span class="text-muted" style="font-size: 0.75em;">${[a,b].join(':')}</span>
+                    </span>
+                  </p>`;
+      $(msg).appendTo('#chats');
+      $("html, body, #chats").animate({ scrollTop: $("#chats").height() }, 1000);
+    }
+    
+    window.onload = function(){
+      
+      $("#inputField").keyup(function (e) { 
+        if($(this).val().length>0){
+          switchFaIcon('#sendBtn','microphone','send');
+
+          if(e.which==13){
+            sentMsg($(this).val());
+            $(this).val('');
+          }
+        }
+        else switchFaIcon('#sendBtn','send','microphone');
+      });
+
+      $("#sendBtn").click(function (e) { 
+        e.preventDefault();
+        if($(this).hasClass('fa-send')){
+          sentMsg($("#inputField").val());
+          $("#inputField").val('');
+        }
+        else if($(this).hasClass('fa-microphone')){
+          console.log('recorded');
+        }
+      });
+    };
+  </script>
+</body>
+</html>

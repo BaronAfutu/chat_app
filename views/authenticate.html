@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+  <title>Chat App - Signin/Signup</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width">        
+  <link rel="stylesheet" href="/public/stylesheets/style.css">
+  <link rel="stylesheet" href="/public/stylesheets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="/public/stylesheets/vendor/font-awesome.min.css">
+</head>
+<body class="main-body">
+  <!-- <div class="backdrop position-fixed"> </div> -->
+  <div class="container shadow-lg mt-5 px-0 h-auto">
+    
+    
+
+  </div>
+  <div class="container bg-light w-50 p-3">
+    <div class="container p-3 border-dark border shadow rounded" id="signupForm">
+      <h2>Sign up</h2>
+      <hr>
+      <form action="" method="post">
+        <label for="username" class="form-check-label h5 text-center text-success w-100">Username</label>
+        <input type="text" name="username"  class="form-control w-50 mx-auto">
+        <br>
+        <label for="password" class="form-check-label h5 text-center w-100 text-success">Password</label>
+        <input type="password" name="password" id="signupPassword" class="form-control w-50 mx-auto">
+        <br>
+        <label for="confirmPassword" class="form-check-label h5 text-center w-100 text-success">Confirm Password</label>
+        <input type="password" name="signupConfirmPassword" id="confirmPassword" class="form-control w-50 mx-auto">
+        <br>
+        <input type="submit" value="Signup" class="form-control font-weight-bold btn-light btn-outline-success w-25 mx-auto">
+        <br>
+        <p class="text-center"> or <span id="showLoginForm" class="text-success">login instead...</span></p>
+      </form>
+    </div>
+    
+    <div class="container p-3 border-dark border shadow rounded d-none" id="loginForm">
+      <h2>Sign in</h2>
+      <hr>
+      <form action="" method="post">
+        <label for="username" class="form-check-label h5 text-center text-success w-100">Username</label>
+        <input type="text" name="username"  class="form-control w-50 mx-auto">
+        <br>
+        <label for="password" class="form-check-label h5 text-center w-100 text-success">Password</label>
+        <input type="password" name="password" id="password" class="form-control w-50 mx-auto">
+        <br>
+        <p style="cursor: pointer;" class="text-center text-secondary">Forgot Password?</p>
+        <input type="submit" value="Login" class="form-control font-weight-bold btn-light btn-outline-success w-25 mx-auto">
+        <br>
+        <p class="text-center"> Don't have an account? <span id="showSignupForm" class="text-success">Register Here.</span></p>
+      </form>
+    </div>
+  </div>
+  
+  
+
+
+
+
+
+
+
+    <script src="/public/javascripts/vendor/jquery.min.js"></script>
+    <script src="/public/javascripts/vendor/bootstrap.min.js"></script>
+    <script src="/public/javascripts/vendor/templatemo_script.js"></script>
+    <script type="text/javascript">
+    // Line chart
+    $(document).ready(function () {
+      $("#showSignupForm").click(function (e) { 
+        e.preventDefault();
+        $("#signupForm").removeClass('d-none');
+        $("#loginForm").addClass('d-none');
+      });
+      $("#showLoginForm").click(function (e) { 
+        e.preventDefault();
+        $("#loginForm").removeClass('d-none');
+        $("#signupForm").addClass('d-none');
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.main-body{
+  background-color: rgb(0, 144, 93);
+}
+.chatScreen{
+  background-color: rgb(219 221 196);
+  font-size: 1.2em;
+}
+.chatScreen .bg-success{
+  background-color: #e1ffa1!important;
+}
+.chatScreen .bg-info{
+  background-color: #99e2ed!important;
+}
+#chats{
+  display: block;
+  height: 75vh;
+}
+
+#showLoginForm,#showSignupForm{
+  cursor: pointer;
+}
